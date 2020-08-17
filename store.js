@@ -10,8 +10,8 @@ const STORE = {
 [
   {
     name: 'Does the narwhal bacon today?',
-    answers: ['yes', 'no'],
-    correctAnswer: 'no'
+    answers: ['yess', 'no'],
+    correctAnswer: 'yess'
   },
   {
     name: 'Is ludicrous speed faster than plaid?',
