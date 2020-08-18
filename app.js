@@ -84,6 +84,20 @@ function renderStart(){
   let startPageHTML = generateStart();
   $('main').html(startPageHTML);
 }
+
+function checkIfQuizIsOver(){
+  if(STORE.currentQuestion === STORE.questions.length){
+    renderResults()
+  } else{
+    renderQuiz();
+  }
+}
+
+function renderResults(){
+  alert("Quiz over!");
+  let resultspage = generateEnd();
+  $('main').html(resultspage);
+}
 // This function conditionally replaces the contents of the <main> tag based on the state of the store
 /********** EVENT HANDLER FUNCTIONS **********/
 function startTheQuiz(event){
@@ -104,19 +118,12 @@ function submitAnswer(event){
   let answer =$('input[name=answers]:checked').val();
   if(STORE.questions[STORE.currentQuestion].correctAnswer === answer){
     alert("You are right!");
-    STORE.currentScore++
+    STORE.currentScore++;
   } else { 
     alert(`You're wrong! The correct answer was: ${STORE.questions[STORE.currentQuestion].correctAnswer}`);
   }
-  STORE.questionNumber++
+  STORE.questionNumber++;
   STORE.currentQuestion++;
-  if(STORE.currentQuestion === STORE.questions.length){
-    alert("Quiz over!")
-    let resultspage = generateEnd();
-    $('main').html(resultspage);
-  } else{
-    renderQuiz();
-  }
-  
+  checkIfQuizIsOver();
 }
 // These functions handle events (submit, click, etc)

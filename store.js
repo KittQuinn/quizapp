@@ -9,29 +9,29 @@ const STORE = {
   questions:
 [
   {
-    name: 'Does the narwhal bacon today?',
-    answers: ['yess', 'no'],
-    correctAnswer: 'yess'
+    name: 'When does the narwhal bacon?',
+    answers: ['Noon.', 'Midnight.'],
+    correctAnswer: 'Midnight.'
   },
   {
-    name: 'Is ludicrous speed faster than plaid?',
-    answers: ['yes', 'no'],
-    correctAnswer: 'no'
+    name: 'What is the answer to the ultimate question of life, the universe, and everything?',
+    answers: ['42.', 'Kilroy was here.'],
+    correctAnswer: '42.'
   },
   {
     name: 'If someone asks if you\'re a god, what should you always say?',
-    answers: ['yes', 'no'],
-    correctAnswer: 'yes'
+    answers: ['Yes!', 'No.'],
+    correctAnswer: 'Yes!'
   },
   {
-    name: 'Would lonestar dare give you the raspberry?',
-    answers: ['yes', 'no'],
-    correctAnswer: 'yes'
+    name: 'Who would dare give you the raspberry?',
+    answers: ['Lonestar.', 'Smuckers.'],
+    correctAnswer: 'Lonestar.'
   },
   {
-    name: 'Is there a turtle under the turtle that holds up the world?',
-    answers: ['yes', 'no'],
-    correctAnswer: 'yes'
+    name: 'What holds up the turtle that holds up the world?',
+    answers: ['Sheer willpower.', 'It\'s turtles, all the way down.'],
+    correctAnswer: 'It\'s turtles, all the way down.'
   }
 ]  
 };
