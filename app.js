@@ -36,8 +36,8 @@ function generateQuiz(){
     <div class="scoreSection">Your current score is ${STORE.currentScore}</div>
     <div class="question">${question.name}</div>
     <form class="form">
-      <input type="radio" id="true" name="answers" value="${question.answers[0]}">
-      <label for="true">${question.answers[0]}</label><br>
+      <input type="radio" id="answers" name="answers" value="${question.answers[0]}" required>
+      <label for="answers">${question.answers[0]}</label><br>
       <input type="radio" id="false" name="answers" value="${question.answers[1]}">
       <label for="false">${question.answers[1]}</label><br>
       <button type="submit" id="submit">Submit</button>
