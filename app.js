@@ -126,4 +126,26 @@ function submitAnswer(event){
   STORE.currentQuestion++;
   checkIfQuizIsOver();
 }
+
+/*
+function submitAnswer(event){
+  event.preventDefault();
+  let answer =$('input[name=answers]:checked').val();
+  if(STORE.questions[STORE.currentQuestion].correctAnswer === answer){
+    alert("You are right!");
+    STORE.currentScore++
+  } else { 
+    alert(`You're wrong! The correct answer was: ${STORE.questions[STORE.currentQuestion].correctAnswer}`);
+  }
+  STORE.questionNumber++
+  STORE.currentQuestion++;
+  if(STORE.currentQuestion === STORE.questions.length){
+    alert("Quiz over!")
+    let resultspage = generateEnd();
+    $('main').html(resultspage);
+  } else{
+    renderQuiz();
+  }
+}
+*/
 // These functions handle events (submit, click, etc)
